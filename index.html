@@ -11,36 +11,8 @@
         contain-intrinsic-size: 3000px 1500px;
       }
       /* Kaori art: pinned to left edge of viewport while scrolling */
-      #audiera-kaori-left {
-        position: absolute;
-        top: 50%;
-        left: max(12px, env(safe-area-inset-left, 0px));
-        right: auto !important;
-        transform: translateY(-50%) !important;
-        z-index: 10;
-        max-width: min(42vw, 350px);
-        max-height: 90vh;
-        width: auto;
-        margin: 0 !important;
-        pointer-events: none;
-        line-height: 0;
-      }
-      @media screen {
-          #audiera-kaori-left {
-          position: absolute;
-          top: 50%;
-          left: max(12px, env(safe-area-inset-left, 0px));
-          right: auto !important;
-          transform: translateY(-50%) !important;
-          z-index: 10;
-          max-width: min(42vw, 350px);
-          max-height: 90vh;
-          width: auto;
-          margin: 0 !important;
-          pointer-events: none;
-          line-height: 0;
-        }
-      }
+
+      
       body.rtl #audiera-kaori-left {
         left: auto !important;
         right: max(12px, env(safe-area-inset-right, 0px)) !important;
@@ -3220,6 +3192,7 @@
         margin: 0 !important;
         pointer-events: none;
       }
+
       body.rtl #audiera-kaori-left {
         left: auto !important;
         right: max(12px, env(safe-area-inset-right, 0px)) !important;
