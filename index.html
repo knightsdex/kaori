@@ -25,6 +25,22 @@
         pointer-events: none;
         line-height: 0;
       }
+      @media screen {
+          #audiera-kaori-left {
+          position: absolute;
+          top: 50%;
+          left: max(12px, env(safe-area-inset-left, 0px));
+          right: auto !important;
+          transform: translateY(-50%) !important;
+          z-index: 10;
+          max-width: min(42vw, 350px);
+          max-height: 90vh;
+          width: auto;
+          margin: 0 !important;
+          pointer-events: none;
+          line-height: 0;
+        }
+      }
       body.rtl #audiera-kaori-left {
         left: auto !important;
         right: max(12px, env(safe-area-inset-right, 0px)) !important;
@@ -40,8 +56,8 @@
       /* Kousei art: pinned to right edge of viewport while scrolling */
       #audiera-kousei-right {
         position: absolute;
-        top: 50%;
-        right: max(12px, env(safe-area-inset-right, 0px));
+        top: 60%;
+        right: max(160px, env(safe-area-inset-right, 0px));
         left: auto !important;
         transform: translateY(-50%) !important;
         z-index: 10;
@@ -3218,19 +3234,7 @@
       }
     </style>
     <style id="audiera-kousei-right-lock">
-      #audiera-kousei-right {
-        position: absolute;
-        top: 50% !important;
-        right: max(12px, env(safe-area-inset-right, 0px)) !important;
-        left: auto !important;
-        transform: translateY(-50%) !important;
-        z-index: 10 !important;
-        max-width: min(42vw, 420px) !important;
-        max-height: 90vh !important;
-        width: auto !important;
-        margin: 0 !important;
-        pointer-events: none;
-      }
+
       body.rtl #audiera-kousei-right {
         right: auto !important;
         left: max(12px, env(safe-area-inset-left, 0px)) !important;
@@ -3261,7 +3265,6 @@
       id="audiera-kousei-right"
       class="audiera-kousei-right"
       aria-hidden="true"
-      style="position:absolute;top:60%!important;right:max(160px,env(safe-area-inset-right,0px))!important;left:auto!important;transform:translateY(-50%)!important;z-index:10;max-width:min(42vw,420px);max-height:90vh;width:auto;margin:0;pointer-events:none;"
     >
       <img
         src="/wp-content/uploads/2025/03/kousei.png"
