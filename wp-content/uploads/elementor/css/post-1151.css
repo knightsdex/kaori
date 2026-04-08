@@ -168,7 +168,7 @@ body.rtl .elementor-1151 .elementor-element.elementor-element-8af02da {
   font-weight: var(--e-global-typography-text-font-weight);
 }
 body:not(.rtl) .elementor-1151 .elementor-element.elementor-element-b35844a {
-  left: 26%;
+  left: 30%;
 }
 body.rtl .elementor-1151 .elementor-element.elementor-element-b35844a {
   right: 0px;
@@ -2287,7 +2287,7 @@ body.rtl .elementor-1151 .elementor-element.elementor-element-b35844a {
     max-width: 100%;
   }
   body:not(.rtl) .elementor-1151 .elementor-element.elementor-element-b35844a {
-    left: -52px;
+    left: 0px;
   }
   body.rtl .elementor-1151 .elementor-element.elementor-element-b35844a {
     right: -52px;
